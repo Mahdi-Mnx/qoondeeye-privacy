@@ -78,10 +78,10 @@
             class="flex flex-wrap items-center gap-3 text-sm text-outline font-medium"
           >
             <span
-              class="bg-[#e7e8ea] px-3 py-1 rounded-full text-xs uppercase tracking-widest text-on-surface-variant"
-              >Version 1.0</span
-            >
-            <span>Last updated: April 11, 2026</span>
+  class="bg-[#e7e8ea] px-3 py-1 rounded-full text-xs uppercase tracking-widest text-on-surface-variant"
+  >Version 1.1</span
+>
+<span>Last updated: May 3, 2026</span>
           </div>
         </header>
 
@@ -308,9 +308,9 @@
                   class="space-y-4 leading-relaxed text-on-secondary-fixed-variant"
                 >
                   <p>
-                    Qoondeeye offers an optional SMS import feature to help
-                    record supported mobile-money transaction alerts.
-                  </p>
+  Qoondeeye offers an optional SMS auto-import feature to help record
+  supported Somali mobile-money and bank transaction alerts.
+</p>
                   <div class="space-y-5 mt-6">
                     <div>
                       <h3 class="font-bold text-on-secondary-fixed-variant">
@@ -329,21 +329,34 @@
                         What messages are processed
                       </h3>
                       <p class="text-base opacity-95 mt-1">
-                        Only supported transaction alerts (such as EVC-style
-                        messages) are processed. Other SMS is ignored.
-                      </p>
+  Only supported Somali mobile-money and bank transaction alerts are
+  processed, such as supported EVC Plus, Somnet/JEEB, and Salaam Bank
+  transaction SMS formats. Other SMS messages are ignored. Qoondeeye does
+  not read your SMS inbox or scan old SMS history.
+</p>
                     </div>
                     <div>
                       <h3 class="font-bold text-on-secondary-fixed-variant">
                         How SMS data is used
                       </h3>
                       <p class="text-base opacity-95 mt-1">
-                        We may extract limited details such as amount,
-                        transaction type, date/time, and sender or counterparty
-                        when available. This is used only to create finance
-                        records in the app.
-                      </p>
+  We may extract limited transaction details such as amount, transaction
+  type, date/time, balance, reference number, account identifier, and sender,
+  recipient, or counterparty name/number when available. This information is
+  used only to create and organize finance records in the app.
+</p>
                     </div>
+                    <div>
+  <h3 class="font-bold text-on-secondary-fixed-variant">
+    Provider names
+  </h3>
+  <p class="text-base opacity-95 mt-1">
+    Provider names such as EVC Plus, Somnet/JEEB, Salaam Bank, and any other
+    supported services are used only to identify transaction SMS formats that
+    Qoondeeye can recognize. Qoondeeye is independent and is not affiliated
+    with, endorsed by, or sponsored by these providers.
+  </p>
+</div>
                     <div>
                       <h3 class="font-bold text-on-secondary-fixed-variant">
                         Your control
@@ -395,8 +408,8 @@
                 Your records may be stored on your device and synced with
                 backend services (such as Supabase) for backup and multi-device
                 access. Optional receipt images and profile photos may be stored
-                in associated cloud file storage for the same purpose. We do not
-                upload your full SMS inbox.
+                in associated cloud file storage for the same purpose. We do not upload your full SMS inbox, and queued SMS imports store parsed
+transaction fields only, not your full SMS message body.
               </p>
             </div>
           </section>
